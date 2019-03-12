@@ -1,0 +1,21 @@
+{
+  "name": "decorators",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sample.js",
+  "dependencies": {
+    "babel-core": "^6.26.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-decorators": "^7.3.0"
+  },
+  "scripts": {
+    "build": "babel src -d dist",
+    "start:log": "npm run build && node ./dist/sample-log.js",
+    "start:memoize": "npm run build && node ./dist/sample-memoize.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
